@@ -1,0 +1,21 @@
+﻿<Window x:Class="EMailClient.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EMailClient"
+        mc:Ignorable="d"
+        Title="EMailClient" Height="250" Width="391" ResizeMode="NoResize">
+
+
+   
+    
+    <Grid Background="Black">
+        <Image Source="i2UIZGJT6.jpg"/>
+        <Label Name="llogin" Content="Логин" Margin="25,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="loginbox" Height="32" Margin="25,25,25,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="AliceBlue" FontSize="20" Padding="0" HorizontalContentAlignment="Center"/>
+        <Label Name="lpassword" Content="Пароль" Margin="25,57,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <PasswordBox Name="passwordbox" Height="32" Margin="25,82,25,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="AliceBlue" FontSize="22" HorizontalContentAlignment="Center"/>
+        <Button Name="blog_in" Width="125" Height="40" Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,140,0,0" Click="blog_in_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="EMailClient.Letter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EMailClient"
+        mc:Ignorable="d"
+        Title="Письмо" Height="450" Width="800">
+
+    <Grid Background="Aquamarine">
+        <StackPanel Orientation="Horizontal" Height="26" Margin="10,10,10,0" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Button x:Name="SaveMessage" Width="16" Margin="5,5,0,0" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Click="SaveMessage_Click">
+                <Image Source="save.png"/>
+            </Button>
+            <Button x:Name="DeleteMessage" Width="16" Height="16" Margin="5,5,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="DeleteMessage_Click">
+                <Image Source="delete.png"/>
+            </Button>
+        </StackPanel>
+        <TextBox Name="MessageInfo" Height="70" Margin="10,46,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" TextWrapping="WrapWithOverflow" IsReadOnly="True"/>
+        <WebBrowser Name="mb" Margin="10,126,10,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </Grid>
+</Window>
